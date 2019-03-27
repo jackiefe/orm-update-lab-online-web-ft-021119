@@ -60,7 +60,7 @@ end
     SQL
     result = DB[:conn].execute(sql, name).flatten
     #binding.pry 
-  self.new(result[1], result[2], result[0])
+    self.new(result[1], result[2], result[0])
   
     
   end
