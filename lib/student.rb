@@ -59,7 +59,7 @@ end
     LIMIT 1 
     SQL
     result = DB[:conn].execute(sql, name).flatten
-    binding.pry 
+    #binding.pry 
   #  self.new(result[1])
   
     
