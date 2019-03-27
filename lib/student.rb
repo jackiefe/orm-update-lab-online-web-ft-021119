@@ -58,7 +58,7 @@ end
     SELECT * FROM students WHERE name = ?
     LIMIT 1 
     SQL
-    result = DB[:conn].execute(sql, name).flatten[1]
+    result = DB[:conn].execute(sql, name).flatten
     binding.pry 
   #  self.new(result[1])
   
