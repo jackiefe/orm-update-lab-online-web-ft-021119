@@ -1,5 +1,5 @@
 require_relative "../config/environment.rb"
-
+require 'pry' 
 class Student
 attr_accessor :name, :grade, :id
 
@@ -59,7 +59,9 @@ end
     LIMIT 1 
     SQL
     result = DB[:conn].execute(sql, name)
-    self.new(result[0], result[1], result[2])
+    binding.pry 
+  #  self.new(result[1])
+    
   end
 
 
